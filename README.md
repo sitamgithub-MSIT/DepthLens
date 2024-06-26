@@ -2,6 +2,18 @@
 
 Depth Estimation is the task of predicting the depth of each pixel in an image. This project uses one of the popular models, [dpt-beit-large-512](https://huggingface.co/Intel/dpt-beit-large-512) for depth estimation from the Hugging Face model hub. The used model can be run in CPUs.
 
+## Project Structure
+
+The project is structured as follows:
+
+- `app.py`: The main file that contains the Gradio application for depth estimation.
+- `depth_estimation.py`: The file that contains the depth estimation model and functions.
+- `requirements.txt`: The file that contains the required dependencies for the project.
+- `LICENSE`: The license file for the project.
+- `README.md`: The README file that contains information about the project.
+- `assets`: The folder that contains the screenshots for working of the application.
+- `images`: The folder that contains the images for testing the application.
+
 ## Tech Stack
 
 - Python (for the programming language)
