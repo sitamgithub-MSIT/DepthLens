@@ -6,7 +6,7 @@ from transformers import DPTImageProcessor, DPTForDepthEstimation
 
 
 # Load the model and feature extractor
-feature_extractor = DPTImageProcessor.from_pretrained("Intel/dpt-beit-large-512")
+image_processor = DPTImageProcessor.from_pretrained("Intel/dpt-beit-large-512")
 model = DPTForDepthEstimation.from_pretrained("Intel/dpt-beit-large-512")
 
 
@@ -23,7 +23,7 @@ def process_image(image):
     """
 
     # Preprocess the image for the model
-    encoding = feature_extractor(image, return_tensors="pt")
+    encoding = image_processor(image, return_tensors="pt")
 
     # Forward pass through the model
     with torch.no_grad():
